@@ -1,12 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 
-export const dialogMsgBase = 'Activated menu item => ';
-
-const sampleCallback = (item) => {
-	window.alert(`${dialogMsgBase}${item.label}`);
-};
-
 export const dashboardNavSampleMenuItems = [
 	{
 		icon: 'house',
@@ -54,11 +48,9 @@ export const dashboardNavSampleMenuItems = [
 export const helpMenuItems = [
 	{
 		label: 'Customer Support',
-		callback: sampleCallback,
 	},
 	{
 		label: 'Platform Status',
-		callback: sampleCallback,
 	},
 	{
 		isSeparator: true,
@@ -69,19 +61,15 @@ export const helpMenuItems = [
 	},
 	{
 		label: 'Documentation',
-		callback: sampleCallback,
 	},
 	{
 		label: 'Pantheon Learning',
-		callback: sampleCallback,
 	},
 	{
 		label: 'Community Slack',
-		callback: sampleCallback,
 	},
 	{
 		label: 'Share Feedback',
-		callback: sampleCallback,
 	},
 ];
 
@@ -119,23 +107,19 @@ export const sampleSites = [
 
 export const userMenuItems = [
 	{
-		label: 'Dashboard',
-		callback: sampleCallback,
+		callback: () => {
+			console.log('Personal Settings clicked');
+		},
+		iconName: 'userGear',
+		label: 'Personal Settings',
 	},
 	{
-		label: 'Settings',
-		callback: sampleCallback,
-	},
-	{
-		isSeparator: true,
-	},
-	{
-		label: 'Pantheon Homepage',
-		callback: sampleCallback,
-	},
-	{
-		label: 'Log out',
-		callback: sampleCallback,
+		callback: () => {
+			console.log('Sign out clicked');
+		},
+		iconName: 'bracketRight',
+		label: 'Sign out',
+		id: 'sign-out',
 	},
 ];
 
