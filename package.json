@@ -12,7 +12,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"@pantheon-systems/pds-toolkit-react": "file:pantheon-systems-pds-toolkit-react-1.0.0-dev.135.2.tgz",
+		"@pantheon-systems/pds-toolkit-react": "^1.0.0-dev.141",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-prettier": "^5.2.1",
 		"next": "14.2.5",
