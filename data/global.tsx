@@ -107,11 +107,8 @@ export const sampleSites = [
 
 export const userMenuItems = [
 	{
-		callback: () => {
-			console.log('Personal Settings clicked');
-		},
 		iconName: 'userGear',
-		label: 'Personal Settings',
+		linkContent: <a href='/'>Personal Settings</a>,
 	},
 	{
 		callback: () => {
