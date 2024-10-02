@@ -7,6 +7,10 @@ export const dashboardNavSampleMenuItems = [
 		linkContent: <a href='/'>Home</a>,
 	},
 	{
+		icon: 'wrench',
+		linkContent: <Link href='test-page'>Test Page</Link>,
+	},
+	{
 		icon: 'laptopCode',
 		linkContent: <a href='/sites'>Sites</a>,
 		links: [
