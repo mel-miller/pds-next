@@ -43,6 +43,9 @@ export default function RootLayout({
 							containerWidth='full'
 							hideBorder
 							hideLogo
+							logoSrc=''
+							logoSubBrand=''
+							className=''
 						>
 							<WorkspaceSelector
 								slot='items-left'
@@ -52,6 +55,7 @@ export default function RootLayout({
 										Create workspace
 									</a>
 								}
+								className=''
 							/>
 							<DashboardSearch
 								slot='items-right'
@@ -59,6 +63,9 @@ export default function RootLayout({
 								label='Search sites'
 								placeholder='Search sites'
 								siteList={sampleSites}
+								onFocus={() => {}}
+								onOptionSelect={() => {}}
+								className=''
 							/>
 							<MenuButton
 								slot='items-right'
@@ -66,6 +73,11 @@ export default function RootLayout({
 								menuItems={helpMenuItems}
 								variant='navbar'
 								withinNavbar
+								avatarImageSrc=''
+								disabled={false}
+								id='help-menu-button'
+								testId='help-menu-button'
+								className=''
 							/>
 							<UserMenu
 								slot='items-right'
