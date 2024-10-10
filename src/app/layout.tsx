@@ -3,7 +3,7 @@
 // Components
 import {
 	DashboardLayout,
-	DashboardNav,
+	// DashboardNav,
 	DashboardSearch,
 	GlobalWrapper,
 	MenuButton,
@@ -88,11 +88,11 @@ export default function RootLayout({
 								userName='Devin Miller'
 							/>
 						</Navbar>
-						<DashboardNav
+						{/* <DashboardNav
 							slot='sidebar'
 							ariaLabel='Workspace navigation'
 							menuItems={dashboardNavSampleMenuItems}
-						/>
+						/> */}
 						<div slot='main'>{children}</div>
 					</DashboardLayout>
 				</GlobalWrapper>
